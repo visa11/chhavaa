@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Kamal Swami | Chhavaa</title>
+  <meta name="description" content="Hotel Kamal Swami, Supane Padali, Karad Patan Road. Pure Veg family restaurant. No Ajinomoto, No Soda, No Color.">
+  <style>
+    :root{--green:#092b10;--green2:#174c1c;--gold:#e6bd3d;--cream:#fff9e9;--white:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,"Noto Sans Devanagari",sans-serif;color:#202820;background:var(--cream);line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .topbar{background:#061b09;color:#fff;text-align:center;padding:8px 16px;font-size:14px}
+    header{position:sticky;top:0;z-index:20;background:rgba(6,27,9,.97);box-shadow:0 2px 14px #0004}
+    nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
+    .brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800}
+    .brand img{width:52px;height:52px;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}
+    .brand span{font-size:20px}
+    .links{display:flex;gap:22px;color:#fff;font-weight:600}
+    .links a:hover{color:var(--gold)}
+    .hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:70px 18px;
+      background:linear-gradient(90deg,#041706e8,#092b10d9),url("assets/logo1.jpg") center/cover}
+    .hero-card{max-width:850px;color:#fff}
+    .hero-logo{width:170px;height:170px;object-fit:cover;border-radius:50%;border:5px solid var(--gold);box-shadow:0 10px 35px #0008;margin-bottom:20px}
+    h1{font-size:clamp(38px,7vw,72px);line-height:1.05;margin-bottom:12px}
+    .sub{font-size:clamp(20px,3vw,31px);color:#ffe27b;font-weight:800;margin-bottom:15px}
+    .tag{font-size:18px;letter-spacing:1px;margin-bottom:28px}
+    .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{padding:12px 22px;border-radius:30px;font-weight:800;border:2px solid var(--gold)}
+    .btn.gold{background:var(--gold);color:#13210e}
+    .btn.outline{color:#fff;background:#ffffff18}
+    section{max-width:1150px;margin:auto;padding:70px 18px}
+    .title{text-align:center;color:var(--green);font-size:38px;margin-bottom:12px}
+    .lead{text-align:center;max-width:760px;margin:0 auto 35px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+    .panel{background:#fff;padding:30px;border-radius:20px;box-shadow:0 8px 28px #183c1720}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:25px}
+    .feature{background:#fff;border-radius:18px;padding:24px;text-align:center;box-shadow:0 6px 22px #183c1717}
+    .feature b{display:block;color:var(--green);font-size:19px;margin-bottom:6px}
+    .menu{background:var(--green);color:#fff;border-radius:24px;padding:45px 25px;text-align:center}
+    .menu h2{color:#ffe27b}
+    .menu p{max-width:700px;margin:10px auto 22px}
+    .specials{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:25px}
+    .special{background:#fff;border-radius:16px;padding:20px;text-align:center;font-weight:800;box-shadow:0 5px 18px #183c1715}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .review{background:#fff;padding:24px;border-radius:18px;box-shadow:0 6px 22px #183c1717}
+    .stars{color:#d7a600;font-size:22px}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .map{width:100%;min-height:330px;border:0;border-radius:18px}
+    footer{background:#061b09;color:#fff;text-align:center;padding:28px 18px}
+    .float{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;gap:10px}
+    .float a{background:#e6bd3d;color:#10200c;padding:12px 17px;border-radius:28px;font-weight:900;box-shadow:0 5px 18px #0005}
+    @media(max-width:800px){
+      .links{display:none}.about,.contact{grid-template-columns:1fr}.features{grid-template-columns:1fr}
+      .specials{grid-template-columns:1fr 1fr}.hero{min-height:72vh}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">Pure Veg • Family Restaurant • Supane Padali, Karad</div>
+
+  <header>
+    <nav>
+      <a class="brand" href="#home">
+        <img src="assets/logo1.jpg" alt="Hotel Kamal Swami logo">
+        <span>Hotel Kamal Swami</span>
+      </a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#special">Specialities</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-card">
+        <img class="hero-logo" src="assets/logo1.jpg" alt="Hotel Kamal Swami">
+        <h1>हॉटेल कमल स्वामी</h1>
+        <div class="sub">शुद्ध शाकाहारी</div>
+        <div class="tag">NO AJINOMOTO • NO SODA • NO COLOR</div>
+        <div class="buttons">
+          <a class="btn gold" href="#menu">🍽️ आमचा मेनू</a>
+          <a class="btn outline" href="tel:+919765016516">📞 Call Now</a>
+          <a class="btn outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Kamal%20Swami%2C%20Near%20MH50%20RTO%20Office%2C%20Karad%20Patan%20Road%2C%20Supane%20Padali%20415114">📍 Directions</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="title">आमच्याबद्दल</h2>
+      <p class="lead">चव, स्वच्छता आणि दर्जा यांना प्राधान्य देणारे आपले हॉटेल — कुटुंबासोबत स्वादिष्ट शाकाहारी जेवणासाठी एक उत्तम ठिकाण.</p>
+      <div class="about">
+        <div class="panel">
+          <h3>Hotel Kamal Swami</h3>
+          <p>Near MH50 RTO Office,<br>Karad Patan Road, Supane Padali – 415114</p>
+          <p style="margin-top:12px"><b>मोबाईल:</b><br>97650 16516<br>90111 09119<br>9067 076 076</p>
+        </div>
+        <div class="panel">
+          <h3>आमची खासियत</h3>
+          <p>शुद्ध शाकाहारी पदार्थ, मनापासून केलेली सेवा आणि घरगुती चवीचा अनुभव.</p>
+          <div class="features">
+            <div class="feature"><b>Pure Veg</b>शुद्ध शाकाहारी</div>
+            <div class="feature"><b>Fresh Food</b>ताजे पदार्थ</div>
+            <div class="feature"><b>Family</b>कुटुंबासाठी योग्य</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="menu">
+        <h2 class="title" style="color:#ffe27b">Our Menu</h2>
+        <p>तुमचा संपूर्ण मेनू येथे एका क्लिकवर उपलब्ध होईल. Google वर असलेली Menu List / PDF लिंक येथे जोडता येईल.</p>
+        <a class="btn gold" href="#" onclick="alert('तुमची Menu PDF/Google Menu लिंक येथे जोडायची आहे.');return false;">📋 View Full Menu</a>
+      </div>
+    </section>
+
+    <section id="special">
+      <h2 class="title">Our Specialities</h2>
+      <p class="lead">आमच्या ग्राहकांच्या आवडीचे खास पदार्थ</p>
+      <div class="specials">
+        <div class="special">🍛 स्पेशल थाळी</div>
+        <div class="special">🌶️ तांबडा रस्सा</div>
+        <div class="special">🥣 पांढरा रस्सा</div>
+        <div class="special">🍚 स्पेशल बिर्याणी</div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2 class="title">Google Reviews</h2>
+      <p class="lead">तुमच्या ग्राहकांचे 5 ⭐ Reviews वेबसाइटवर दाखवता येतील.</p>
+      <div class="reviews">
+        <div class="review"><div class="stars">★★★★★</div><p>“चव आणि सर्व्हिस खूप छान. पुन्हा नक्की भेट देऊ.”</p></div>
+        <div class="review"><div class="stars">★★★★★</div><p>“कुटुंबासोबत जेवण्यासाठी उत्तम ठिकाण.”</p></div>
+        <div class="review"><div class="stars">★★★★★</div><p>“स्वच्छता आणि जेवणाचा दर्जा आवडला.”</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="title">Contact & Location</h2>
+      <div class="contact">
+        <div class="panel">
+          <h3>Hotel Kamal Swami</h3>
+          <p>Near MH50 RTO Office,<br>Karad Patan Road,<br>Supane Padali – 415114</p>
+          <p style="margin-top:15px">
+            <a class="btn gold" href="tel:+919765016516">📞 97650 16516</a>
+          </p>
+          <p style="margin-top:15px">90111 09119 &nbsp; | &nbsp; 9067 076 076</p>
+        </div>
+        <iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Hotel%20Kamal%20Swami%2C%20Supane%20Padali%2C%20Karad&output=embed"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <div class="float">
+    <a href="https://wa.me/919765016516" target="_blank" rel="noopener">💬 WhatsApp</a>
+    <a href="tel:+919765016516">📞 Call</a>
+  </div>
+
+  <footer>
+    <p>© 2026 Hotel Kamal Swami • Chhavaa.com</p>
+    <p>चव आमची न्यारी… सेवा आमची खास!</p>
+  </footer>
+</body>
+</html>
